@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import PrimaryButtons from "./components/application-ui/elements/buttons/primary_buttons"; 
+import RoundButtons from "./components/application-ui/elements/buttons/round_buttons"; 
+import CircularButtons from "./components/application-ui/elements/buttons/circular_buttons"; 
+import SecondaryButtons from "./components/application-ui/elements/buttons/secondary_buttons"; 
+import WhiteButtons from "./components/application-ui/elements/buttons/white_buttons"; 
+import ButtonWithLeadingIcon from "./components/application-ui/elements/buttons/button_with_leading_icon"; 
+import ButtonWithTrailingIcons from "./components/application-ui/elements/buttons/button_with_trailing_icons"; 
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{display:'flex',flexDirection:'column',width:'20vw'}}>
+      <PrimaryButtons/>
+      <RoundButtons/>
+      <CircularButtons/>
+      <SecondaryButtons/>
+      <WhiteButtons/>
+      <ButtonWithLeadingIcon/>  
+      <ButtonWithTrailingIcons/>
     </div>
   );
 }
